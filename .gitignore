@@ -21,3 +21,4 @@ logs/
 *.log
 data/*
 !data/README.md
+testing.py
