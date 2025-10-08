@@ -21,7 +21,7 @@ Future versions will add X/Twitter and more platforms.
 ---
 
 ## 🧩 Project Structure
-\`\`\`
+```
 collector/        → Reddit API fetchers
 preprocessing/    → Text cleaning functions
 analysis/         → VADER sentiment scripts
@@ -30,25 +30,25 @@ api/              → REST API (Flask/FastAPI)
 dashboard/        → Streamlit UI for visualization
 utils/            → Config, logger, helpers
 data/             → Temporary raw & processed files (ignored by Git)
-\`\`\`
+```
 
 ---
 
 ## ⚙️ Setup
 
 ### 1️⃣ Clone & Environment
-\`\`\`bash
+```bash
 git clone https://github.com/SumayerKhan/End-to-End_Social_Media_Sentiment_Scraper_DB_API_Visualizer.git
 cd End-to-End_Social_Media_Sentiment_Scraper_DB_API_Visualizer
 python -m venv venv
 source venv/bin/activate     # on Windows: venv\Scripts\activate
 pip install -r requirements.txt
-\`\`\`
+```
 
 ### 2️⃣ Environment Variables (\`.env\`)
 Copy \`.env.example\` → \`.env\` and fill in your secrets:
 
-\`\`\`
+```
 REDDIT_CLIENT_ID=xxxx
 REDDIT_CLIENT_SECRET=xxxx
 REDDIT_USER_AGENT=sentiment_scraper:v1.0 (by u/YourUsername)
@@ -56,14 +56,14 @@ DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=yourpassword
 DB_NAME=sentiment_db
-\`\`\`
+```
 
 ---
 
 ## 🧠 MVP Workflow
-\`\`\`
+```
 Keyword → Reddit API → Preprocessing → VADER → Database → API → Dashboard
-\`\`\`
+```
 
 | Phase | Goal | Status |
 |-------|------|--------|
